@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.custom-navbar {
+  background-color: rgb(0, 0, 0) !important;
+  padding: 8px 0;
+}
+
+/* Navbar when scrolled */
+.scrolled {
+  transition: 1s ease-in-out;
+  /* background-color: rgb(103,63,213) !important; */
+  background: linear-gradient(90deg, rgba(103, 63, 213, 0.664) 0%, rgba(150, 61, 194, 0.644) 35%, rgba(146, 22, 123, 0.604) 100%);
+  
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  transition: background-color 1s ease-in-out;
+  gap: 30px; /* Increase space between nav items */
+}
+
+/* Default Nav Items */
+.nav-links .nav-item {
+  transition: color 1s ease-in-out;
+  font-size: 1.2rem;
+  padding: 12px 25px; /* Adjust padding */
+  height: auto;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.nav-links {
+  color: aliceblue;
+}
+.nav-links:hover {
+  color: aquamarine;
+}
+
+
+
+.nav-links .nav-item:hover,
+.nav-links .nav-item:focus {
+  background: linear-gradient(to right, #f472b6, #8b5cf6);
+  transition: color 1s ease-in-out;
+  border-radius: 10px;
+  padding-top:8px ;
+  padding-bottom: 8px;
+  height: 38px;
+  
+ 
+  
+  
+}
+
+/* Navbar Toggler (Hamburger Button) */
+.navbar-toggler {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/* Smooth transition for brand logo */
+.brand-logo {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Desktop view adjustments */
+@media (min-width: 992px) {
+  .custom-navbar .container {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing */
+    align-items: center;
+  }
+
+  .navbar-brand {
+    margin-right: auto; /* Stays on the left */
+  }
+
+  .nav-links {
+    gap: 30px; /* Increase spacing between nav items */
+  }
+
+  .nav-links .nav-item {
+    font-size: 1.2rem;
+    padding: 12px 25px; /* Adjust padding */
+  }
+
+  .custom-navbar {
+    padding: 10px 0;
+  }
+}
+
+
+
+span{
+  color: red;
+}
+.detail{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+
+/* Base Button Styles */
+.contact-button {
+  position: relative;
+  margin-top: 2%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px; /* Equivalent to px-4 py-1 */
+  font-weight:600;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 6px;
+  background: linear-gradient(to right, #f472b6, #8b5cf6); /* Equivalent to from-pink-400 to-violet-500 */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover Effects */
+.contact-button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 0px 15px 5px rgba(244, 114, 182, 0.5), 
+  0px 0px 25px 10px rgba(139, 92, 246, 0.3);}
+
+/* Focus Effects */
+.contact-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px white;
+}
+
+/* Click Effect */
+.contact-button:active {
+  transform: scale(0.95); /* Pressed effect */
+  box-shadow: 0px 0px 10px 4px rgba(244, 114, 182, 0.5), 
+  0px 0px 20px 8px rgba(139, 92, 246, 0.4);
+}

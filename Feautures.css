@@ -1,0 +1,77 @@
+/* Background & Layout */
+.features-section {
+  background: linear-gradient(to right, #111, #222);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Card Styling */
+.feature-card {
+  background: linear-gradient(90deg, rgba(103, 63, 213, 0.8) 0%, rgba(150, 61, 194, 0.7) 35%, rgba(146, 22, 123, 0.7) 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px; /* Prevents excessive width */
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Typography */
+.para {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 992px) { /* Tablets */
+  .features-section {
+      padding: 40px 15px;
+  }
+  .feature-card {
+      max-width: 90%;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) { /* Smaller Tablets */
+  .features-section {
+      padding: 30px 10px;
+  }
+  .feature-card {
+      width: 95%;
+      max-width: 300px; /* Slightly smaller */
+      margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) { /* Mobile View */
+  .features-section {
+      padding: 20px 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .feature-card {
+      width: 90%;
+      max-width: 280px;
+      margin: 10px auto;
+      padding: 15px;
+  }
+  .feature-card p {
+      font-size: 0.85rem;
+  }
+}
+
+
+
+
+
+
+  

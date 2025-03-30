@@ -1,0 +1,95 @@
+.footer {
+  background-color: #1c1c1c; /* Dark background */
+  color: white;
+}
+
+.footer-logo {
+  width: 40px; /* Adjust based on your logo size */
+}
+
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+}
+.social-icon[href*="twitter"]:hover {
+  color: #E1306C;
+  
+}
+
+/* GitHub Hover Effect */
+.social-icon[href*="github"]:hover {
+  
+  color: red;
+  
+}
+
+/* LinkedIn Hover Effect */
+.social-icon[href*="linkedin"]:hover {
+  
+  color: #0077B5;
+}
+
+
+.footer {
+  background-color: #1a1a1a; /* Dark background */
+  color: white;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  background: linear-gradient(to right, #f472b6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.social-icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.social-icon:hover {
+  color: #f8d210; /* Change color on hover */
+}
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text for mobile */
+  text-align: left; /* Align text properly */
+}
+
+@media (min-width: 768px) {  /* Tablet and above */
+  .contact-list li {
+    justify-content: flex-start; /* Align left */
+  }
+}
+
+@media (min-width: 1024px) {  /* Laptop view */
+  .contact-list {
+    padding-left: 10px;  /* Adjust padding for proper spacing */
+  }
+}
+
+

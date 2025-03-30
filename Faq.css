@@ -1,0 +1,111 @@
+/* FAQ Section */
+.faq-container {
+   min-height: auto;
+   padding: 40px 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+ }
+ 
+ /* FAQ Cards */
+ .faq-card {
+   width: 100%;
+   max-width: 350px;
+   margin-bottom: 20px;
+   background: rgba(255, 255, 255, 0.2);
+   
+  
+   border-radius: 10px;
+   transition: transform 0.3s ease-in-out;
+   
+   
+ }
+ 
+ .faq-card:hover {
+   transform: translateY(-5px);
+   background: linear-gradient(to right, #d946ef, #9333ea);;
+   
+ }
+ 
+ /* FAQ Columns */
+ .faq-col {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+ }
+
+ /* Change Accordion Header Background & Text */
+.accordion-button {
+  background-color: purple; /* Gradient Example */
+  color: white;  /* Text color */
+  font-weight: bold;
+}
+
+
+
+/* Change Accordion Body Background & Text */
+.accordion-body {
+  background-color:#292929 ; /* Dark background */
+  color: #f8fafc; /* Light text */
+  border-top: 2px solid #9333ea; /* Purple accent */
+}
+
+/* Remove default Bootstrap shadow effect on focus */
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+ 
+ /* Responsive Design */
+ @media (max-width: 992px) { /* Laptops & Tablets */
+   .faq-container .row {
+     justify-content: center;
+   }
+ 
+   .faq-col {
+     width: 50%; /* Two columns per row */
+   }
+ 
+   .faq-card {
+     width: 90%;
+   }
+ }
+ 
+ @media (max-width: 768px) { /* Small Tablets & Large Phones */
+   .faq-col {
+     width: 100%; /* One column per row */
+   }
+ 
+   .faq-card {
+     width: 85%;
+   }
+ }
+ 
+ @media (max-width: 576px) { /* Mobile Phones */
+   .faq-container {
+     padding: 20px;
+   }
+ 
+   .faq-pos {
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+   }
+ 
+   .faq-card {
+     width: 90%;
+     max-width: 350px;
+   }
+ }
+
+ 
+ 
+
+
+
+
+
+  
+  

@@ -1,0 +1,130 @@
+/* Full Page Styling */
+.defi-section {
+    position: relative;
+    background: #111;
+    padding: 40px 0; /* Reduced padding */
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Background Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px; /* Reduced padding */
+    position: absolute;
+    top: 30px; /* Moved closer */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+/* Grid Items (Replace with actual images) */
+.grid-item {
+    background-size: cover;
+    background-position: center;
+    height: 180px; /* Slightly reduced height */
+    border-radius: 10px;
+}
+
+/* Placeholder Images */
+.img-1 { background-image: url('/path-to-your-image-1.jpg'); }
+.img-2 { background-image: url('/path-to-your-image-2.jpg'); }
+.img-3 { background-image: url('/path-to-your-image-3.jpg'); }
+.img-4 { background-image: url('/path-to-your-image-4.jpg'); }
+.img-5 { background-image: url('/path-to-your-image-5.jpg'); }
+.img-6 { background-image: url('/path-to-your-image-6.jpg'); }
+
+/* Content Overlay */
+.content-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading */
+.main-heading {
+    font-size: 2.5rem; /* Slightly reduced font size */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px; /* Reduced margin */
+}
+
+/* Glassmorphism Buttons */
+.glass-button {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduced space between icon and text */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px); /* Slightly reduced blur */
+    border-radius: 10px;
+    padding: 12px 18px; /* Reduced padding */
+    width: 100%;
+    max-width: 320px; /* Reduced max-width */
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Titles */
+.button-title {
+    font-size: 0.95rem; /* Slightly smaller font */
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Button Description */
+.button-text {
+    font-size: 0.8rem; /* Reduced font size */
+    color: white;
+}
+
+/* Hover Effect */
+.glass-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.25);
+}
+
+/* Icons */
+.glass-button svg {
+    font-size: 20px; /* Reduced icon size */
+    color: #fff;
+}
+
+/* Bootstrap Grid Spacing Fix */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Responsive Fixes */
+@media (max-width: 992px) {
+    .glass-button {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .glass-button {
+        width: 95%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .defi-section {
+        padding: 20px 10px; /* Further reduced padding */
+    }
+    .glass-button {
+        width: 90%;
+        padding: 10px; /* Reduced padding */
+    }
+}
+
+
+
+
+
+
+
